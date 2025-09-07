@@ -1,0 +1,5 @@
+{
+  "name": "Prompt Injection Generator",
+  "description": "An application that uses AI to generate creative and effective prompt injections based on a user's goal. This tool helps users understand and explore prompt engineering techniques for various AI models.",
+  "requestFramePermissions": []
+}
