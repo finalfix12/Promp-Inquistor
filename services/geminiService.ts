@@ -1,10 +1,10 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
-if (!process.env.REACT_APP_API_KEY) {
+if (!process.env.VITE_API_KEY) {
     throw new Error("API_KEY environment variable not set");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.REACT_APP_API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.VITE_API_KEY });
 
 export const AVAILABLE_MODELS = ['GPT-4', 'Claude 3', 'Llama 3', 'Gemini', 'Grok'];
 
