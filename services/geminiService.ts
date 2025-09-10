@@ -1,10 +1,11 @@
 import { GoogleGenAI, Type } from "@google/genai";
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
-if (!process.env.VITE_API_KEY) {
-    throw new Error("API_KEY environment variable not set");
+if (!apiKey) {
+    throw new Error("VITE_GEMINI_API_KEY environment variable not set");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.VITE_API_KEY });
+const ai = new GoogleGenAI({ apiKey });
 
 export const AVAILABLE_MODELS = ['GPT-4', 'Claude 3', 'Llama 3', 'Gemini', 'Grok'];
 
